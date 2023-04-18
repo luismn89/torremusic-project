@@ -1,0 +1,45 @@
+@import "base.css";
+
+main {
+  background-image: url("../images/fondo2L.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 175px;
+  padding-bottom: 50px;
+}
+.quote-description {
+  text-align: right;
+  line-height: 22px;
+}
+.image-detail {
+  width: 100%;
+  margin: 20px 0;
+}
+.btn-back {
+  background: #666;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  margin: 42px auto 24px;
+}
+@media screen and (min-width: 1024px) {
+  .quote-description,
+  .btn-back-container {
+    width: 50%;
+    margin-left: auto;
+  }
+  .image-container {
+    width: 45%;
+    position: absolute;
+    top: 190px;
+  }
+  .image-container img {
+    width: 90%;
+  }
+  .quote-description {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

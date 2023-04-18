@@ -1,0 +1,31 @@
+@import "base.css";
+
+main {
+  background-image: url("../images/fondo2L.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 175px;
+  padding-bottom: 50px;
+}
+.images-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.images-group .image-member {
+  width: 65%;
+}
+.images-group .image-member img {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .images-group {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+  .images-group .image-member {
+    max-width: 242px;
+  }
+}
