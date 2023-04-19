@@ -50,10 +50,10 @@ main {
 }
 .navbar.fixed {
   position: fixed;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(56,56,56,0.9);
 }
 .navbar.active-mobile {
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(56,56,56,0.9);
 }
 .navbar__container {
   display: flex;
@@ -62,23 +62,30 @@ main {
 }
 .navbar__options-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  padding-top: 5px;
 }
 .navbar__flags {
   display: flex;
+  margin-bottom: 5px;
+  margin-right: 12px;
+  gap: 8px;
+}
+.navbar__flags li {
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navbar__flags li a {
-  display: flex;
-  max-width: 30px;
-  max-height: 20.3px;
-  padding: 24px;
-  align-items: center;
-  justify-content: center;
+  font-family: sans-serif;
+  color: #FFF;
+  padding: 15px;
 }
 .button-menu-mobile {
   color: #FFF;
-  font-size: 24px;
+  font-size: 32px;
   padding: 10px 12px;
   cursor: pointer;
 }
@@ -88,9 +95,9 @@ main {
   transition: all .5s ease-in-out;
   position: absolute;
   width: 100vw;
-  top: 168px;
+  top: 139px;
   left: -15px;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(56,56,56,0.9);
 }
 .navbar__menu.open {
   height: auto;
@@ -125,15 +132,24 @@ main {
 .navbar__menu-options li a:hover::after {
   width: 50%;
 }
+.navbar__menu-options li .link-button {
+  position: relative;
+}
+.navbar__menu-options li .link-button {
+  display: block;
+}
+.navbar__menu-options li .link-button i {
+  position: absolute;
+  right: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  color: #FFF;
+  font-size: 12px;
+}
 .navbar__submenu {
   max-height: 0;
   overflow: hidden;
-}
-.navbar__menu-options li:hover a + .navbar__submenu {
-  animation-name: growSubMenu;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
 }
 .navbar__menu-social-media {
   display: flex;
@@ -144,6 +160,12 @@ main {
   color: #FFF;
   font-size: 24px;
   padding: 15px;
+}
+.open-submenu-mobile {
+  animation-name: growSubMenu;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 @keyframes growSubMenu {
   from { max-height: 0; }
@@ -187,8 +209,15 @@ main {
   .navbar__menu-options li a {
     padding: 15px 0;
   }
+  /* .navbar__menu-options li:hover a + .navbar__submenu {
+    padding: 5px;
+  } */
   .navbar__menu-options li:hover a + .navbar__submenu {
     padding: 5px;
+    animation-name: growSubMenu;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
   }
   .navbar__submenu {
     background-color: rgba(0,0,0,0.8);

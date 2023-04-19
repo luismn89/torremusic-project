@@ -39,3 +39,51 @@
 .swiper-slide.swiper-slide-active {
   z-index: 2;
 }
+.swiper-pagination {
+  margin-bottom: 15px;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  background-color: rgba(0,0,0,0.5);
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: rgba(0,0,0,0.9);
+}
+@media screen and (min-width: 1024px) {
+  .swiper-slide .swiper-slide__text-image {
+    transform: translateY(-50%);
+    line-height: 1.5;
+  } 
+  .slide-torre .swiper-slide__text-image {
+    left: 75%;
+    font-size: 75px;
+    line-height: 1.2;
+  }
+  .slide-torre .swiper-slide__text-image span {
+    font-size: 20px;
+  }
+  .slide-emotions .swiper-slide__text-image,
+  .slide-music .swiper-slide__text-image,
+  .slide-sentiment .swiper-slide__text-image,
+  .slide-lyrics .swiper-slide__text-image {
+    left: 65%;
+    font-size: 52px;
+    text-align: right;
+    margin-right: 100px;
+  }
+  .slide-passion .swiper-slide__text-image,
+  .slide-sounds .swiper-slide__text-image,
+  .slide-achieves .swiper-slide__text-image {
+    left: 8%;
+    font-size: 50px;
+    text-align: left;
+    max-width: 400px;
+  }
+  .slide-sentiment .swiper-slide__text-image {
+    left: 60%;
+  }
+  .slide-achieves .swiper-slide__text-image {
+    max-width: 380px;
+  }
+}

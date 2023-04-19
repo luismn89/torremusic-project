@@ -50,16 +50,28 @@ document.querySelector('#btn-menu-mobile').addEventListener('click', () => {
   }
 });
 
+let submenuActive = false;
+document.querySelector('.navbar__menu-options li .link-button i').addEventListener('click', evt => {
+  if (!submenuActive) {
+    submenuActive = true;
+    document.querySelector('.navbar__menu-options li .link-button + .navbar__submenu').classList.add('open-submenu-mobile')
+  } else {
+    submenuActive = false;
+    document.querySelector('.navbar__menu-options li .link-button + .navbar__submenu').classList.remove('open-submenu-mobile')
+  }
+});
+
 if (!!document.querySelector('.swiper')) {
   const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false
+    // },
     pagination: {
       el: '.swiper-pagination',
+      clickable: true
     }
   });
 }

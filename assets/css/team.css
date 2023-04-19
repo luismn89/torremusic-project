@@ -11,10 +11,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 16px;
 }
 .images-group .image-member {
-  width: 65%;
+  width: 60%;
 }
 .images-group .image-member img {
   width: 100%;
