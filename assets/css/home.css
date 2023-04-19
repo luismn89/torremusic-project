@@ -10,7 +10,8 @@
 }
 .swiper-slide img {
   position: absolute;
-  height: 100vh;
+  height: 100vh !important;
+  width: initial !important;
 }
 .swiper-slide__text-image {
   position: absolute;
