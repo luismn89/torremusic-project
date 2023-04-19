@@ -177,6 +177,10 @@ main {
     padding-left: 0;
     padding-right: 0;
   }
+  .logo {
+    width: 72px;
+    height: 168px;
+  }
   .button-menu-mobile {
     display: none;
   }
@@ -205,14 +209,15 @@ main {
   }
   .navbar__menu-options li {
     position: relative;
+    justify-content: center;
   }
   .navbar__menu-options li a {
     padding: 15px 0;
   }
-  /* .navbar__menu-options li:hover a + .navbar__submenu {
-    padding: 5px;
-  } */
-  .navbar__menu-options li:hover a + .navbar__submenu {
+  .navbar__menu-options li .link-button i {
+    display: none;
+  }
+  .navbar__menu-options li .link-button:hover + .navbar__submenu {
     padding: 5px;
     animation-name: growSubMenu;
     animation-duration: 0.5s;
