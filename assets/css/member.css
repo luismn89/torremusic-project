@@ -32,8 +32,9 @@ main {
   }
   .image-container {
     width: 45%;
-    position: absolute;
+    position: fixed;
     top: 190px;
+    max-width: 590px;
   }
   .image-container img {
     width: 90%;

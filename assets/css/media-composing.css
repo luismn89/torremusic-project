@@ -75,4 +75,10 @@ main {
   .group-images-container .image-container {
     max-width: 356px;
   }
+  .group-links a img {
+    transition: 0.2s all ease-in-out;
+  }
+  .group-links a:hover img {
+    transform: scale(1.1);
+  }
 }

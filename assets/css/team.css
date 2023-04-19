@@ -28,4 +28,10 @@ main {
   .images-group .image-member {
     max-width: 242px;
   }
+  .images-group .image-member a img {
+    transition: 0.2s all ease-in-out;
+  }
+  .images-group .image-member a:hover img {
+    transform: scale(1.05);
+  }
 }

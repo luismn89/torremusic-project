@@ -81,6 +81,14 @@ main {
   font-family: sans-serif;
   color: #FFF;
   padding: 15px;
+  position: relative;
+  font-size: 14px;
+}
+.navbar__flags li a.active:hover {
+  cursor: initial;
+}
+.navbar__flags li a.active {
+  background: rgba(255, 255, 255, 0.1);
 }
 .button-menu-mobile {
   color: #FFF;
@@ -117,6 +125,7 @@ main {
   padding: 20px 0;
   position: relative;
 }
+.navbar__flags li a::after,
 .navbar__menu-options li a::after {
   transition: .2s width ease-in-out;
   content: " ";
@@ -129,7 +138,8 @@ main {
   left: 50%;
   transform: translateX(-50%);
 }
-.navbar__menu-options li a:hover::after {
+.navbar__menu-options li a:hover::after,
+.navbar__flags li a:not(.active):hover::after {
   width: 50%;
 }
 .navbar__menu-options li .link-button {
@@ -178,11 +188,14 @@ main {
     padding-right: 0;
   }
   .logo {
-    width: 72px;
-    height: 168px;
+    width: 67px;
+    height: 158px;
   }
   .button-menu-mobile {
     display: none;
+  }
+  .navbar__container {
+    align-items: center;
   }
   .navbar__container,
   .content-container {
@@ -212,8 +225,10 @@ main {
     align-items: flex-end;
   }
   .navbar__flags {
-    margin: 0;
-    margin-top: 8px;
+    margin: 8px 0 12px;
+  }
+  .navbar__menu-social-media li a {
+    font-size: 18px;
   }
   .navbar__menu-options li {
     position: relative;
@@ -225,7 +240,7 @@ main {
   .navbar__menu-options li .link-button i {
     display: none;
   }
-  .navbar__menu-options li .link-button:hover + .navbar__submenu {
+  .navbar__menu-options li:hover .link-button + .navbar__submenu {
     padding: 5px;
     animation-name: growSubMenu;
     animation-duration: 0.5s;
@@ -233,7 +248,7 @@ main {
     animation-fill-mode: forwards;
   }
   .navbar__submenu {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(56,56,56,0.9);
     width: 100%;
     position: absolute;
     top: 48px;
