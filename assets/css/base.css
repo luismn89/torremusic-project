@@ -135,7 +135,7 @@ main {
 .navbar__menu-options li .link-button {
   position: relative;
 }
-.navbar__menu-options li .link-button {
+.navbar__menu-options li .link-button a {
   display: block;
 }
 .navbar__menu-options li .link-button i {
