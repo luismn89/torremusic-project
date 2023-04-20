@@ -1,35 +1,3 @@
-const DATA_FOCUS_IMAGE = [
-  {
-    focusX: '-0.3',
-    imageX: '922',
-    imageY: '666'
-  },
-  {
-    focusX: '0.05',
-    imageX: '922',
-    imageY: '666'
-  },
-  {
-    focusX: '-0.3',
-    imageX: '922',
-    imageY: '666'
-  },
-  {
-    focusX: '-0.3',
-    imageX: '922',
-    imageY: '666'
-  },
-  {
-    focusX: '-0.3',
-    imageX: '922',
-    imageY: '666'
-  },
-  {
-    focusX: '-0.3',
-    imageX: '922',
-    imageY: '666'
-  },
-]
 let activeMenu = false;
 let transitionMenu = false;
 document.querySelector('#btn-menu-mobile').addEventListener('click', () => {
