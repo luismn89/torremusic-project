@@ -1,5 +1,10 @@
-@import "../fonts/Edmondsans-Medium.otf";
 @import "icons.css";
+@font-face {font-family: "Edmondsans Medium";
+  src: url("../fonts/edmondsans-medium.eot"); /* IE9*/
+  src: url("../fonts/edmondsans-medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/edmondsans-medium.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/edmondsans-medium.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
 * {
   box-sizing: border-box;
 }
@@ -36,7 +41,7 @@ main {
   padding-right: 15px;
 }
 .font-text {
-  font-family: 'Edmondsans', sans-serif;
+  font-family:"Edmondsans Medium", sans-serif;
   color: #FFF;
   font-size: 16px;
 }
@@ -78,7 +83,7 @@ main {
   align-items: center;
 }
 .navbar__flags li a {
-  font-family: sans-serif;
+  font-family:"Edmondsans Medium", sans-serif;
   color: #FFF;
   padding: 15px;
   position: relative;

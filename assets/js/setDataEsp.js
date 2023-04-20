@@ -29,31 +29,31 @@ if (!!captionAudioEsp) {
 }
 const firstQuoteTorreEsp = document.querySelector('#first-quote-torre-esp')
 if (!!firstQuoteTorreEsp) {
-  firstQuoteTorreEsp.querySelector('em')?.innerHTML = `${DESCRIPCIONES_TORRE_ESP.primeraReferencia.texto}<br>`;
-  firstQuoteTorreEsp.querySelector('strong')?.innerHTML = `<br>${DESCRIPCIONES_TORRE_ESP.primeraReferencia.autor}`;
+  firstQuoteTorreEsp.querySelector('em').innerHTML = `${DESCRIPCIONES_TORRE_ESP.primeraReferencia.texto}<br>`;
+  firstQuoteTorreEsp.querySelector('strong').innerHTML = `<br>${DESCRIPCIONES_TORRE_ESP.primeraReferencia.autor}`;
 }
 const secondQuoteTorreEsp = document.querySelector('#second-quote-torre-esp')
 if (!!secondQuoteTorreEsp) {
-  secondQuoteTorreEsp.querySelector('em')?.innerHTML = `${DESCRIPCIONES_TORRE_ESP.segundaReferencia.texto}<br>`;
-  secondQuoteTorreEsp.querySelector('strong')?.innerHTML = `<br>${DESCRIPCIONES_TORRE_ESP.segundaReferencia.autor}`;
+  secondQuoteTorreEsp.querySelector('em').innerHTML = `${DESCRIPCIONES_TORRE_ESP.segundaReferencia.texto}<br>`;
+  secondQuoteTorreEsp.querySelector('strong').innerHTML = `<br>${DESCRIPCIONES_TORRE_ESP.segundaReferencia.autor}`;
 }
 const firstQuoteOmarEsp = document.querySelector('#first-quote-omar-esp')
 if (!!firstQuoteOmarEsp) {
-  firstQuoteOmarEsp.querySelector('em')?.innerHTML = `${DESCRIPCIONES_OMAR_ESP.primeraReferencia.texto}<br>`;
-  firstQuoteOmarEsp.querySelector('strong')?.innerHTML = `<br>${DESCRIPCIONES_OMAR_ESP.primeraReferencia.autor}`;
+  firstQuoteOmarEsp.querySelector('em').innerHTML = `${DESCRIPCIONES_OMAR_ESP.primeraReferencia.texto}<br>`;
+  firstQuoteOmarEsp.querySelector('strong').innerHTML = `<br>${DESCRIPCIONES_OMAR_ESP.primeraReferencia.autor}`;
 }
 const secondQuoteOmarEsp = document.querySelector('#second-quote-omar-esp')
 if (!!secondQuoteOmarEsp) {
-  secondQuoteOmarEsp.querySelector('em')?.innerHTML = `${DESCRIPCIONES_OMAR_ESP.segundaReferencia.texto}<br>`;
-  secondQuoteOmarEsp.querySelector('strong')?.innerHTML = `<br>${DESCRIPCIONES_OMAR_ESP.segundaReferencia.autor}`;
+  secondQuoteOmarEsp.querySelector('em').innerHTML = `${DESCRIPCIONES_OMAR_ESP.segundaReferencia.texto}<br>`;
+  secondQuoteOmarEsp.querySelector('strong').innerHTML = `<br>${DESCRIPCIONES_OMAR_ESP.segundaReferencia.autor}`;
 }
 const firstQuoteLandoEsp = document.querySelector('#first-quote-lando-esp')
 if (!!firstQuoteLandoEsp) {
-  firstQuoteLandoEsp.querySelector('em')?.innerHTML = `${DESCRIPCIONES_LANDO_ESP.primeraReferencia.texto}<br>`;
-  firstQuoteLandoEsp.querySelector('strong')?.innerHTML = `<br>${DESCRIPCIONES_LANDO_ESP.primeraReferencia.autor}`;
+  firstQuoteLandoEsp.querySelector('em').innerHTML = `${DESCRIPCIONES_LANDO_ESP.primeraReferencia.texto}<br>`;
+  firstQuoteLandoEsp.querySelector('strong').innerHTML = `<br>${DESCRIPCIONES_LANDO_ESP.primeraReferencia.autor}`;
 }
 const secondQuoteLandoEsp = document.querySelector('#second-quote-lando-esp')
 if (!!secondQuoteLandoEsp) {
-  secondQuoteLandoEsp.querySelector('em')?.innerHTML = `${DESCRIPCIONES_LANDO_ESP.segundaReferencia.texto}<br>`;
-  secondQuoteLandoEsp.querySelector('strong')?.innerHTML = `<br>${DESCRIPCIONES_LANDO_ESP.segundaReferencia.autor}`;
+  secondQuoteLandoEsp.querySelector('em').innerHTML = `${DESCRIPCIONES_LANDO_ESP.segundaReferencia.texto}<br>`;
+  secondQuoteLandoEsp.querySelector('strong').innerHTML = `<br>${DESCRIPCIONES_LANDO_ESP.segundaReferencia.autor}`;
 }

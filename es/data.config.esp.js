@@ -1,3 +1,10 @@
+REDES_SOCIALES = {
+  facebook: '',
+  instagram: '',
+  spotify: '',
+  youtube: ''
+}
+
 TEXTOS_SLIDERS_INICIO_ESP = [
   'torre<span>UP HEAR</span>',
   'Emoción y pensamiento fusionados en imagen y sonido',
